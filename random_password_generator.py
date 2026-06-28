@@ -1,21 +1,8 @@
-import random
-import string
+def replace_nucleotide (dna_strand):
+    trna = dna_strand.replace('T','U')
 
-# Step 1: Asking User's desired password length
-length = int(input("Enter desired password length: "))
+    return f'{trna}'
 
-# Step 2: Define systemic character pools
-letters = string.ascii_letters
-digits = string.digits
-special_chars = string.punctuation
-
-# Step 3: Pool aggregation
-all_characters = letters + digits + special_chars
-
-# Step 4: Iterative password generation
-password = ""
-for i in range(length):
-    password += random.choice(all_characters)
-
-# Step 5: Output
-print("Generated Password:", password)
+# Enter your desired Nucleotide Strand Sequence inside ' ' below
+nucleotides = 'GATGGAACTTGACTACGTAAATT'
+print(replace_nucleotide(nucleotides))
