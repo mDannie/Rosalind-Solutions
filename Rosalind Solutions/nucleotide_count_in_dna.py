@@ -6,6 +6,6 @@ def count_nucleotides (dna_strand):
 
     return f"{a} {c} {g} {t}"
 
-# Enter your desired Nucleotide Strand's Sequence inside ' ' below
+# Enter your desired Nucleotide Strand Sequence inside ' ' below
 nucleotides = 'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'
 print(count_nucleotides(nucleotides))
